@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marfil Shop | Colección Esencial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; overflow-x: hidden; background: #f8f9fa; }
+    .hero-gradient { background: linear-gradient(135deg, #1f2937 0%, #111827 100%); }
+    .btn-gradient { background: linear-gradient(135deg, #d4af37, #c49b24); color: #fff; }
+    .btn-gradient:hover { background: linear-gradient(135deg, #c49b24, #b8860b); color: #fff; }
+    .gradient-text { background: linear-gradient(135deg, #1f2937, #6b7280); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hover-lift { transition: all .3s ease; }
+    .hover-lift:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(0,0,0,0.15)!important; }
+    .floating { animation: floating 3s ease-in-out infinite; }
+    @keyframes floating { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-12px);} }
+    footer { background: #111827; border-top: 3px solid #d4af37; }
+  </style>
+</head>
+<body class="text-dark">
+
+  <!-- HEADER -->
+  <header class="bg-white fixed-top shadow-sm py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="#" class="fw-bold fs-3 gradient-text text-decoration-none">Marfil Shop</a>
+      <nav class="d-none d-md-flex gap-4">
+        <a href="#coleccion" class="text-dark text-decoration-none fw-medium">Colección</a>
+        <a href="#beneficios" class="text-dark text-decoration-none fw-medium">Beneficios</a>
+        <a href="#testimonios" class="text-dark text-decoration-none fw-medium">Testimonios</a>
+      </nav>
+      <a href="#comprar" class="btn btn-gradient btn-lg fw-bold px-4">Comprar Ahora</a>
+    </div>
+  </header>
+
+  <main class="pt-5">
+    <!-- HERO -->
+    <section class="hero-gradient text-center text-white py-5 mt-5">
+      <div class="container pt-5">
+        <span class="d-inline-block px-4 py-2 mb-3 rounded-pill bg-white bg-opacity-10 fw-semibold">✨ Nueva Colección 2025</span>
+        <h1 class="display-3 fw-bold mb-3">Elegancia que <span class="text-warning">Permanece</span></h1>
+        <p class="lead mb-4 mx-auto" style="max-width:700px;">Colección premium con materiales de primera calidad y un diseño atemporal que refleja sobriedad y estilo.</p>
+        <a href="#comprar" class="btn btn-gradient btn-lg fw-bold px-5 py-3 shadow">Descubrir Colección →</a>
+
+        <div class="floating mt-5">
+          <div class="rounded-4 overflow-hidden shadow-lg border border-light border-opacity-25 mx-auto" style="max-width:900px;">
+            <img src="https://placehold.co/1000x600/FFFFFF/111827?text=Producto+Premium" class="img-fluid" alt="Producto destacado">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold display-5 gradient-text mb-3">¿Por qué elegirnos?</h2>
+        <p class="text-muted fs-5 mb-5">Comprometidos con la excelencia y la durabilidad</p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="bg-white p-4 rounded-4 hover-lift h-100 shadow-sm">
+              <i class="bi bi-gem fs-1 text-warning mb-3"></i>
+              <h5 class="fw-bold">Materiales Premium</h5>
+              <p class="text-muted">Cada pieza está elaborada con acabados de lujo y máxima calidad.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-white p-4 rounded-4 hover-lift h-100 shadow-sm">
+              <i class="bi bi-collection fs-1 text-warning mb-3"></i>
+              <h5 class="fw-bold">Diseño Atemporal</h5>
+              <p class="text-muted">Moda sobria que nunca pasa de tendencia y se adapta a cualquier ocasión.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-white p-4 rounded-4 hover-lift h-100 shadow-sm">
+              <i class="bi bi-shield-check fs-1 text-warning mb-3"></i>
+              <h5 class="fw-bold">Durabilidad Garantizada</h5>
+              <p class="text-muted">Creemos en piezas que trascienden y permanecen contigo durante años.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold display-5 gradient-text mb-3">Clientes que confían en nosotros</h2>
+        <p class="text-muted fs-5 mb-5">Más de 10,000 clientes satisfechos</p>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-5">
+            <div class="bg-white p-4 rounded-4 shadow-sm hover-lift h-100 text-start">
+              <p class="fst-italic text-dark">“La calidad del producto es insuperable. Diseño sobrio, elegante y atemporal.”</p>
+              <div class="d-flex align-items-center mt-3">
+                <div class="rounded-circle me-3" style="width:50px; height:50px; background:#d4af37;"></div>
+                <div>
+                  <strong>Valentina R.</strong><br>
+                  <small class="text-muted">Cliente verificado</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="bg-white p-4 rounded-4 shadow-sm hover-lift h-100 text-start">
+              <p class="fst-italic text-dark">“Sobriedad y lujo en cada detalle. Me siento segura al invertir en estas piezas.”</p>
+              <div class="d-flex align-items-center mt-3">
+                <div class="rounded-circle me-3" style="width:50px; height:50px; background:#d4af37;"></div>
+                <div>
+                  <strong>Luis F.</strong><br>
+                  <small class="text-muted">Cliente verificado</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="comprar" class="py-5 text-center bg-light">
+      <div class="container">
+        <h2 class="fw-bold display-6 gradient-text mb-3">Colección Esencial 2025</h2>
+        <p class="text-muted fs-5 mb-4">Haz tu pedido hoy y suma estilo con sobriedad y elegancia</p>
+        <a href="#" class="btn btn-gradient btn-lg fw-bold px-5 py-3 shadow">Comprar Ahora</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-light py-5">
+    <div class="container row mx-auto">
+      <div class="col-md-4 mb-4">
+        <h5 class="text-white">Marfil Shop</h5>
+        <p class="small">
+          ASOCIACION MARFIL SpA<br>
+          Identificación fiscal: 78.147.434-7
+        </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6 class="text-white">Enlaces</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#coleccion" class="text-light text-decoration-none">Colección</a></li>
+          <li><a href="#beneficios" class="text-light text-decoration-none">Beneficios</a></li>
+          <li><a href="#testimonios" class="text-light text-decoration-none">Testimonios</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Política de Privacidad</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Términos de Servicio</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6 class="text-white">Contacto</h6>
+        <p class="small mb-1">Avenida Providencia N°1229 Of. 217, Providencia, RM 7500571, Chile</p>
+        <p class="small mb-1">Teléfono: <a href="tel:+56927789562" class="text-light text-decoration-none">+56 9 2778 9562</a></p>
+        <p class="small">Correo: <a href="mailto:soporte@asociacionmarfil.lat" class="text-light text-decoration-none">soporte@asociacionmarfil.lat</a></p>
+      </div>
+    </div>
+    <div class="text-center text-secondary small mt-4">
+      © 2025 Marfil Shop. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
